@@ -1,0 +1,20 @@
+
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: #e0b47b;
+}
+h1,
+h2,
+h3{color: #c24b41;
+
+}
+
+nav{
+    background-color:black; 
+
+}
+nav a{
+    color: #e0b47b;
+    text-decoration: none;
+
+}
