@@ -18,7 +18,7 @@
     <a href="#content" class="accessible-hidden">Skip to main content</a>
 
     <header>
-        <a href="portfolio.html">
+        <a href="portfolio.html"></a> <!-- id="logo-link" -->
             <img id="logo" src="../pics/logo-d.png" alt="Logo - Dark Version">
         </a>
         <nav>
@@ -55,14 +55,14 @@
 
             </section>
 
-            <section class="claim container">
+            <section class="claim">
                 <p>
                     Let's work together to make your product stand out. I create beautiful and functional websites. I work with my clients step
                     by step from the idea stage until the fully functioning web application.
                 </p>
             </section>
 
-            <section class="promo container">
+            <section class=" section section--rose promo">
                 <div class="row">
                     <div class="col-md-3 col-sm-6">
                         <h3>Discover</h3>
@@ -148,7 +148,7 @@
                         <p>Description of hackathon project #5.</p>
                         <p>Description of hackathon project #5.</p>
                     </div>
-                    <div class="col-md-4 col-sm-6 portfolioarticle">
+                    <div class="col-md-4 col-sm-6 portfolioarticle clearfix">
                         <button>Contact me</button>
                         <p>Description of your Final Project.</p>
                         <p>Description of your Final Project, including the tech stack.</p>
@@ -200,18 +200,18 @@
                     <div class="row info">
                        <div class="col-sm-6">
                             <label>First Name</label> *
-                            <input type="text" class="barfield">
+                            <input type="text" class="barfield" required>
                        </div>
                         <div class="col-sm-6">
                             <label>Last Name</label> *
-                            <input type="text" class="barfield">
+                            <input type="text" class="barfield" required>
                         </div>
                     </div>
 
                     <div class="row info">
-                        <div class="col-sm-6" class="barfield">
+                        <div class="col-sm-6">
                             <label>Email</label> *
-                            <input type="email">
+                            <input type="email" class="barfield" required>
                         </div>
                         <div class="col-sm-6">
                             <label>Phone</label>
@@ -219,9 +219,12 @@
                         </div>
                     </div>
                     <br>
-                    <label>My message</label> *
-                    <input type="text">
-                    <br>
+                    <div class="info">
+                        <label>My message</label> *
+                        <br>
+                        <input type="text">
+                        <br>
+                    </div>
                     <button>Send my message</button>
                 </form>
             </section>

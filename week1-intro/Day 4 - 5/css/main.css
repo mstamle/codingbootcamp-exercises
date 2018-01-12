@@ -16,11 +16,14 @@
     position: fixed;
     top: 0;
     left: 0;
-    background: #fff;
+    background:#4d341e;
     padding: 10px;
-    width: auto;
+    width: 100%;
     height: auto;
     clip: auto;
+    text-align: center;
+    color: #e0b47b;
+    text-decoration: none;
     }
 
 body{
@@ -29,9 +32,20 @@ body{
     background-color: #e0b47b;
 }
 
+/* #logo-link{
+    display: flex;
+    align-items: center;
+    margin: 0 1em;
+} */
+
+.header{
+    display: flex;
+    background-color: black;
+}
+
 .container{
-    width: 100%;
-    margin: 0;
+    width: 90%;
+    margin: 5%;
     padding: 0;
 }
 h1,
@@ -91,6 +105,7 @@ nav ul{
     list-style: none;
     padding-left: 0;
     display: flex;
+    flex-wrap: wrap;
 }
 
 li{
@@ -123,6 +138,7 @@ li{
     padding-bottom: 20vw;
     padding-left: 1rem;
     color: black;
+
 }
 
 #logo{
@@ -134,13 +150,13 @@ li{
 #portrait{
     float: left;
 }
-
+/*
 .promo{
     background-color: #c24b41;
     color: #e0b47b;
     text-align: center;
     padding: 1.2em;
-}
+} */
 
 #findme{
     color: #e0b47b;
@@ -152,6 +168,7 @@ li{
 .portfolioarticle{
     display: block;
     padding: 0.5em;
+    height: 200px;
 }
 
 .fa{
