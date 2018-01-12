@@ -1,4 +1,237 @@
 
+html {
+    box-sizing: border-box;
+    }
+*,
+*:before, *:after {
+    box-sizing: inherit;
+    }
+
+body {
+    margin:  0;
+    font-family: 'Lato', sans-serif;
+    background-color: #e0b47b;
+}
+
+
+.header {
+    display: flex;
+    background-color: black;
+}
+
+/* .container {
+    width: 90%;
+    margin: 5%;
+    padding: 0;
+} */
+
+h1 {
+    font-size: 4rem;
+    color: black;
+}
+
+
+h2 {
+    text-align: center;
+    color: #4d341e;
+}
+
+h3 {
+    color: #e0b47b;
+    background-color: #c24b41;
+}
+
+
+/* Header and navigation section
+******************************************************/
+#logo {
+    float: right;
+    width: 50px;
+    margin-right: 20px;
+}
+
+nav {
+    background-color:black;
+    text-align: right;
+    padding-right: 20px;
+
+
+}
+nav a {
+    color: #e0b47b;
+    text-decoration: none;
+    display: block;
+    /* font-size: 1em; */
+    padding: 1.1em 0.4em;
+
+}
+
+nav a:hover,
+nav a:focus {
+    background-color:#4d341e;
+    text-decoration: none;
+    color: #e0b47b;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+/* All general sections
+******************************************************/
+.section {
+    text-align: center;
+    padding: 2em;
+    margin: 0;
+}
+.section--light {
+    background-color: #e0b47b;
+}
+
+.section--rose {
+    background-color: #c24b41;
+    color: #fed7a5
+}
+
+.section--dark {
+    background-color: black;
+}
+
+.jumbotron {
+    background-image: url(../pics/IMG_8711.JPG);
+    background-position: center center;
+    background-size: cover;
+    padding-top:12vw;
+    padding-right: 1rem;
+    padding-bottom: 20vw;
+    padding-left: 4em;
+    color: black;
+
+}
+
+.section--promo {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.section--promo article {
+    width: 100%;
+    padding: 0.7rem 2.5rem;
+}
+
+
+@media only screen and (min-width: 500px) {
+    .section--promo article {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    .section--promo article{
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .section--promo article {
+        width: 25%;
+    }
+}
+
+#portrait {
+    float: left;
+}
+
+
+#findme {
+    color: #e0b47b;
+    text-align: center;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+}
+
+.section--portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.section--portfolio article {
+    width: 100%;
+    padding: 0.7rem 2.5rem;
+}
+
+@media only screen and (min-width: 500px) {
+    .section--portfolio article {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    .section--portfolio article{
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .section--portfolio article {
+        width: 33%;
+    }
+}
+
+.fa {
+    color: #c24b41;
+
+}
+
+.icons {
+    font-size: 7rem;
+    padding-bottom: 6vw;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+    display: inline-block;
+
+}
+
+footer {
+    text-align: center;
+}
+
+.info {
+    text-align: left;
+}
+
+.barfield {
+    float: right;
+}
+
+.barfield:focus {
+    background-color: #c24b41;
+}
+
+.about-img {
+    border-radius: 50%;
+    flex-wrap: wrap;
+    margin: 4em;
+}
+
+.about-text {
+    flex-wrap: wrap;
+    margin: 4em;
+}
+
+footer {
+    color: #4d341e;
+}
 /* Utilities
 ******************************************************/
 
@@ -25,198 +258,3 @@
     color: #e0b47b;
     text-decoration: none;
     }
-
-body{
-    margin:  0;
-    font-family: 'Lato', sans-serif;
-    background-color: #e0b47b;
-}
-
-/* #logo-link{
-    display: flex;
-    align-items: center;
-    margin: 0 1em;
-} */
-
-.header{
-    display: flex;
-    background-color: black;
-}
-
-.container{
-    width: 90%;
-    margin: 5%;
-    padding: 0;
-}
-h1,
-h2{
-    color: #4d341e;
-}
-
-h2{
-    text-align: center;
-}
-
-/* Another solution for the 4 promo blocks
-Set up a class, for example class="article"
-and the css:
-.article{
-    width: 25%;
-    display: flex;
-(display: inline-block;
-}
-
-*/
-
-h1{
-    font-size: 4rem;
-}
-
-h3{
-    color: #e0b47b;
-    background-color: #c24b41;
-}
-
-/* Navigation section
-******************************************************/
-
-nav{
-    background-color:black;
-    text-align: right;
-    padding-right: 20px;
-
-
-}
-nav a{
-    color: #e0b47b;
-    text-decoration: none;
-    display: block;
-    font-size: 2em;
-    padding: 1.1em 0.4em;
-
-}
-
-nav a:hover,
-nav a:focus{
-    background-color:#4d341e;
-    text-decoration: none;
-    color: #e0b47b;
-}
-
-nav ul{
-    list-style: none;
-    padding-left: 0;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-}
-
-li{
-    list-style: none;
-}
-
-.section{
-    text-align: center;
-    padding: 7em;
-}
-.section--light{
-    background-color: #e0b47b;
-}
-
-.section--rose{
-    background-color: #c24b41;
-    color: #fed7a5
-}
-
-.section--dark{
-    background-color: black;
-}
-
-.jumbotron{
-    background-image: url(../pics/IMG_8711.JPG);
-    background-position: center center;
-    background-size: cover;
-    padding-top:12vw;
-    padding-right: 1rem;
-    padding-bottom: 20vw;
-    padding-left: 1rem;
-    color: black;
-
-}
-
-#logo{
-    float: right;
-    width: 100px;
-    margin-right: 20px;
-}
-
-.section--promo{
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-}
-
-.section--promo div{
-    width: 50%;
-    padding: 0 2 5rem;
-}
-
-#portrait{
-    float: left;
-}
-
-
-#findme{
-    color: #e0b47b;
-    text-align: center;
-    padding-top: 4vw;
-    padding-bottom: 4vw;
-}
-
-.portfolioarticle{
-    display: block;
-    padding: 0.5em;
-    height: 200px;
-}
-
-.fa{
-    color: #c24b41;
-
-}
-
-.icons{
-    font-size: 7rem;
-    padding-bottom: 6vw;
-    padding-right: 0.5em;
-    padding-left: 0.5em;
-    display: inline-block;
-
-}
-
-footer{
-    text-align: center;
-}
-
-.info{
-    text-align: left;
-}
-
-.barfield{
-    float: right;
-}
-
-.barfield:focus{
-    background-color: #c24b41;
-}
-
-.about-img{
-    border-radius: 50%;
-    flex-wrap: wrap;
-    margin: 4em;
-}
-
-.about-text{
-    flex-wrap: wrap;
-    margin: 4em;
-}
-
