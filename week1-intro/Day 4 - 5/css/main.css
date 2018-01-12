@@ -11,7 +11,7 @@
     clip: rect(1px, 1px, 1px, 1px);
     white-space: nowrap;
     }
-    
+
     .accessible-hidden:focus {
     position: fixed;
     top: 0;
@@ -29,8 +29,10 @@ body{
     background-color: #e0b47b;
 }
 
-.main{
-    margin:0;
+.container{
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 h1,
 h2{
@@ -63,7 +65,7 @@ h3{
 
 
 nav{
-    background-color:black; 
+    background-color:black;
     text-align: right;
 
 }
@@ -74,7 +76,7 @@ nav a{
 
 .section{
     text-align: center;
-    padding: 2em;
+    padding: 7em;
 
 
 
@@ -115,14 +117,12 @@ nav a{
 
 #findme{
     color: #e0b47b;
-    padding-top: 8vw;
-    padding-bottom: 6vw;
     text-align: center;
 }
 
 .portfolioarticle{
     display: block;
-    padding: 0.2em;
+    padding: 0.5em;
 }
 
 .fa{
@@ -137,4 +137,8 @@ nav a{
     padding-left: 0.5em;
     display: inline-block;
 
+}
+
+footer{
+    text-align: center;
 }
