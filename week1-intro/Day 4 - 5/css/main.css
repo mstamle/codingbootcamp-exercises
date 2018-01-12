@@ -108,6 +108,10 @@ nav a{
     float: left;
 }
 
+#portrait{
+
+}
+
 .promo{
     background-color: #c24b41;
     color: #e0b47b;
@@ -142,3 +146,4 @@ nav a{
 footer{
     text-align: center;
 }
+
