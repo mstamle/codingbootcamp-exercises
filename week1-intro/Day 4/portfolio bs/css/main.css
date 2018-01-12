@@ -77,6 +77,8 @@ h3{
     background-color: #c24b41;
 }
 
+/* Navigation section
+******************************************************/
 
 nav{
     background-color:black;
@@ -106,6 +108,7 @@ nav ul{
     padding-left: 0;
     display: flex;
     flex-wrap: wrap;
+    margin: 0;
 }
 
 li{
@@ -147,16 +150,21 @@ li{
     margin-right: 20px;
 }
 
+.section--promo{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.section--promo div{
+    width: 50%;
+    padding: 0 2 5rem;
+}
+
 #portrait{
     float: left;
 }
-/*
-.promo{
-    background-color: #c24b41;
-    color: #e0b47b;
-    text-align: center;
-    padding: 1.2em;
-} */
+
 
 #findme{
     color: #e0b47b;
@@ -199,5 +207,16 @@ footer{
 
 .barfield:focus{
     background-color: #c24b41;
+}
+
+.about-img{
+    border-radius: 50%;
+    flex-wrap: wrap;
+    margin: 4em;
+}
+
+.about-text{
+    flex-wrap: wrap;
+    margin: 4em;
 }
 
