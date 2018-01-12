@@ -1,0 +1,140 @@
+
+/* Utilities
+******************************************************/
+
+.accessible-hidden {
+    position: absolute;
+    top: 0;
+    left: -999px;
+    height: 1px;
+    width: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
+    }
+    
+    .accessible-hidden:focus {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    padding: 10px;
+    width: auto;
+    height: auto;
+    clip: auto;
+    }
+
+body{
+    margin:  0;
+    font-family: 'Lato', sans-serif;
+    background-color: #e0b47b;
+}
+
+.main{
+    margin:0;
+}
+h1,
+h2{
+    color: black;
+}
+
+h2{
+    text-align: center;
+}
+
+/* Another solution for the 4 promo blocks
+Set up a class, for example class="article"
+and the css:
+.article{
+    width: 25%;
+    display: flex;
+(display: inline-block;
+}
+
+*/
+
+h1{
+    font-size: 4rem;
+}
+
+h3{
+    color: #e0b47b;
+    background-color: #c24b41;
+}
+
+
+nav{
+    background-color:black; 
+    text-align: right;
+
+}
+nav a{
+    color: #e0b47b;
+    text-decoration: none;
+}
+
+.section{
+    text-align: center;
+    padding: 2em;
+
+
+
+}
+.section--light{
+    background-color: #e0b47b;
+}
+
+.section--rose{
+    background-color: #c24b41;
+}
+
+.section--dark{
+    background-color: black;
+}
+
+.jumbotron{
+    background-image: url(../pics/IMG_8711.JPG);
+    background-position: center center;
+    background-size: cover;
+    padding-top:12vw;
+    padding-right: 1rem;
+    padding-bottom: 20vw;
+    padding-left: 1rem;
+    color: black;
+}
+
+#logo{
+    float: left;
+}
+
+.promo{
+    background-color: #c24b41;
+    color: #e0b47b;
+    text-align: center;
+    padding: 1.2em;
+}
+
+#findme{
+    color: #e0b47b;
+    padding-top: 8vw;
+    padding-bottom: 6vw;
+    text-align: center;
+}
+
+.portfolioarticle{
+    display: block;
+    padding: 0.2em;
+}
+
+.fa{
+    color: #c24b41;
+
+}
+
+.icons{
+    font-size: 7rem;
+    padding-bottom: 6vw;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+    display: inline-block;
+
+}
