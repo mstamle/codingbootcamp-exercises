@@ -36,7 +36,7 @@ body{
 }
 h1,
 h2{
-    color: black;
+    color: #4d341e;
 }
 
 h2{
@@ -67,15 +67,30 @@ h3{
 nav{
     background-color:black;
     text-align: right;
+    padding-right: 20px;
+
 
 }
 nav a{
     color: #e0b47b;
     text-decoration: none;
+    display: block;
+    font-size: 2em;
+    padding: 1.1em 0.4em;
+
+}
+
+nav a:hover,
+nav a:focus{
+    background-color:#4d341e;
+    text-decoration: none;
+    color: #e0b47b;
 }
 
 nav ul{
     list-style: none;
+    padding-left: 0;
+    display: flex;
 }
 
 li{
@@ -85,9 +100,6 @@ li{
 .section{
     text-align: center;
     padding: 7em;
-
-
-
 }
 .section--light{
     background-color: #e0b47b;
@@ -95,6 +107,7 @@ li{
 
 .section--rose{
     background-color: #c24b41;
+    color: #fed7a5
 }
 
 .section--dark{
@@ -113,11 +126,13 @@ li{
 }
 
 #logo{
-    float: left;
+    float: right;
+    width: 100px;
+    margin-right: 20px;
 }
 
 #portrait{
-
+    float: left;
 }
 
 .promo{
@@ -130,6 +145,8 @@ li{
 #findme{
     color: #e0b47b;
     text-align: center;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
 }
 
 .portfolioarticle{
@@ -153,5 +170,17 @@ li{
 
 footer{
     text-align: center;
+}
+
+.info{
+    text-align: left;
+}
+
+.barfield{
+    float: right;
+}
+
+.barfield:focus{
+    background-color: #c24b41;
 }
 
