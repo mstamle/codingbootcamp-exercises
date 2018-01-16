@@ -1,3 +1,6 @@
+$headingcolor: #F16529;
+$highlightcolor: #0070BB;
+
 * {
     box-sizing: border-box;
 }
@@ -8,7 +11,7 @@ body {
 }
 
 h2 {
-    color: #0070BB;
+    color: $highlightcolor;
 }
 
 .container {
@@ -23,7 +26,7 @@ h2 {
     font-size: 50px;
     padding: 20px;
     text-align: center;
-    color: #F16529;
+    color: $headingcolor;
 }
 
 .banner {
@@ -46,7 +49,7 @@ em {
 }
 
 .highlight {
-    border-left: solid #0070BB 4px;
+    border-left: solid $highlightcolor 4px;
     padding-left: 1em;
 }
 
