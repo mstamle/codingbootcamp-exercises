@@ -1,29 +1,60 @@
 * {
   box-sizing: border-box; }
 
+header {
+  background-color: black; }
+
 nav {
   width: 75%;
   float: right;
   display: flex;
   justify-content: flex-end;
-  background-color: black;
-  border: solid yellow 2px; }
+  background-color: black; }
 
 nav ul {
   display: flex;
   background-color: black;
-  color: white; }
+  color: white;
+  margin: 0;
+  text-align: center; }
 
 nav li {
-  list-style: none;
-  margin: 0.5em; }
+  list-style: none; }
 
 nav a {
   text-decoration: none;
-  color: white; }
+  display: block;
+  color: white;
+  padding: 1.4em 0.4em; }
+
+nav a:hover
+a:focus {
+  background-color: yellow; }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: black; }
+
+.sticky + .content {
+  padding-top: 60px; }
 
 .jumbotron {
   margin: auto;
+  margin-top: 4em;
+  margin-bottom: 4em;
   width: 80%;
+  padding: 8vw;
   border: solid 1px blue;
   background-color: aquamarine; }
+
+.container {
+  width: 80%;
+  margin: auto; }
+
+/* Gradient transparent - color - transparent */
+.line {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.75), transparent); }

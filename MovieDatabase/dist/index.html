@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,26 +8,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="/css/style.css" />
 </head>
+
 <body>
     <header>
-        <img src="/img/logo.png" alt="The logo of Movie Craze" width="25%">
-        <nav class="mynav">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#recent">Recent News</a></li>
-                <li><a href="#hotm">Hottest Movies</a></li>
-                <li><a href="#hota">Hottest Actors</a></li>
-            </ul>
+        <div id="navbar" class="sticky">
+            <a href="/index.html"><img src="/img/logo.png" alt="The logo of Movie Craze" width="25%"></a>
+            <nav class="mynav">
+                <ul>
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#recent">Recent News</a>
+                    </li>
+                    <li>
+                        <a href="#hotm">Hottest Movies</a>
+                    </li>
+                    <li>
+                        <a href="#hota">Hottest Actors</a>
+                    </li>
+                </ul>
 
-        </nav>
-        <div class="jumbotron">
+            </nav>
+        </div>
+        <div id="#home" class="jumbotron">
             <h1>Welcome to Movie Craze</h1>
-            <h2>Where your ultimate cine adventures await.</h2>
+            <h2>Your cine adventures await.</h2>
         </div>
     </header>
 
-    <main>
-
+    <main class="container">
+        <section id="#recent" class="section section--recent">
+            <h2>Recent News </h2>
+            <article>
+                <h3>Zoe Saldana Joins the Voice Cast of ‘My Little Pony: The
+                Movie
+                </h3>
+                <p>Hasbro and Lionsgate have signed Zoe Saldana for the voice
+                cast of the animated “My Little Pony: The Movie,” Variety has
+                learned exclusively. Previously announced voice cast members
+                include Sia, Liev Schreiber, Taye Diggs, Emily Blunt, Kristin
+                Chenoweth, Uzo Aduba, and Michael Pena. Lionsgate is releasing
+                “My Little Pony” on Oct. 6, 2017. Jayson Thiessen is directing
+                from a screenplay by Meghan McCarthy, writer and producer of the
+                “My Little Pony: Friendship Is Magic” animated series.
+                </p>
+            </article>
+            <hr class="line">
+            <article>
+                <h3>Jamie Foxx Still Claiming Martin Scorsese Will Direct A Mike
+                Tyson Biopic
+                    </h3>
+                <p>While Martin Scorsese always seems to have a busy schedule,
+                it might have opened up slightly given the recent revelation
+                that he bailed on that Frank Sinatra biopic. The director’s next
+                picture is expected to be the hitman tale “The Irishman,” which
+                will reteam him with his longtime friend Robert De Niro, but
+                according to Jamie Foxx, Scorsese is still going to make a Mike
+                Tyson biopic.</p>
+            </article>
+        </section>
+        <section id="#hotm" class="section section--hotm">
+            <h2>Hot Movies</h2>
+            <h3>Rogue One</h3>
+        </section>
+        <section id="hota" class="section section--hota">
+            <h2>Hot Actors</h2>
+            <h3>Felicity Jones</h3>
+        </section>
 
     </main>
 
@@ -35,4 +84,5 @@
     </footer>
 
 </body>
+
 </html>

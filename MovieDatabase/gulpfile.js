@@ -3,7 +3,7 @@ const   gulp = require('gulp');
 
 // Whenever I run the task 'build',
 // it will require the tasks 'compile-css',...
-gulp.task('build', ['compile-css','copy-html','copy-img']);
+gulp.task('build', ['compile-css','copy-html','copy-img','copy-js']);
 
 //Build does it once, but watch will keep watching and
 // updating my files as I tweak the src
@@ -12,6 +12,7 @@ gulp.task('watch', function() {
     gulp.watch('src/scss/*.scss',['compile-css']);
     gulp.watch('src/*.html',['copy-html']);
     gulp.watch('src/img/*',['copy-img']);
+    gulp.watch('src/js/*',['copy-js']);
 });
 
 gulp.task('compile-css',function() {
@@ -33,3 +34,8 @@ gulp.task('copy-img',function() {
     );
 });
 
+gulp.task('copy-js',function() {
+    return gulp.src('src/js/*').pipe(
+        gulp.dest('dist/js')
+    );
+});
