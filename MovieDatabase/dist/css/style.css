@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box; }
+
+nav {
+  width: 75%;
+  float: right;
+  display: flex;
+  justify-content: flex-end;
+  background-color: black;
+  border: solid yellow 2px; }
+
+nav ul {
+  display: flex;
+  background-color: black;
+  color: white; }
+
+nav li {
+  list-style: none;
+  margin: 0.5em; }
+
+nav a {
+  text-decoration: none;
+  color: white; }
+
+.jumbotron {
+  margin: auto;
+  width: 80%;
+  border: solid 1px blue;
+  background-color: aquamarine; }
