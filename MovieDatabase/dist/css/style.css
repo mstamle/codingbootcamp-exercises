@@ -2,8 +2,8 @@
   box-sizing: border-box; }
 
 body {
-  color: #F1BA5F;
-  background-color: #070504; }
+  background-color: #070504;
+  font-family: 'Open Sans Condensed', sans-serif; }
 
 header {
   background-color: black; }
@@ -34,8 +34,8 @@ nav a {
   color: #F1BA5F;
   padding: 1.4em 0.4em; }
 
-nav a:hover
-a:focus {
+nav a:hover,
+nav a:focus {
   background-color: #2F0B07; }
 
 .sticky {
@@ -67,13 +67,18 @@ h1 {
   font-size: 1.7rem;
   margin-bottom: 0; }
 
-h2,
-h3 {
-  text-align: center; }
+h2 {
+  text-align: center;
+  font-weight: bold; }
 
 .container {
   width: 80%;
   margin: auto; }
+
+.section {
+  background-color: #070504;
+  color: #F1BA5F;
+  padding: 4em; }
 
 /* Gradient transparent - color - transparent */
 .line {

@@ -9,8 +9,8 @@ $darkerbrown: #2F0B07;
 }
 
 body {
-    color: $sandybrown;
     background-color: #070504;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 header{
@@ -54,7 +54,7 @@ nav {
 
     }
 
-    a:hover
+    a:hover,
     a:focus{
         background-color:$darkerbrown;
     }
@@ -96,14 +96,22 @@ h1 {
     margin-bottom: 0;
 }
 
-h2,
-h3 {
+h2 {
     text-align: center;
+    font-weight: bold;
 }
 
 .container {
     width: 80%;
     margin: auto;
+
+}
+
+.section {
+    background-color: $black;
+    color: $sandybrown;
+    padding: 4em;
+
 
 }
 
