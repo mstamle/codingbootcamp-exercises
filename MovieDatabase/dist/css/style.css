@@ -1,6 +1,10 @@
 * {
   box-sizing: border-box; }
 
+body {
+  color: beige;
+  background-color: #070504; }
+
 header {
   background-color: black; }
 
@@ -41,13 +45,21 @@ a:focus {
   padding-top: 60px; }
 
 .jumbotron {
+  flex-wrap: wrap;
   margin: auto;
-  margin-top: 4em;
+  margin-top: 5em;
   margin-bottom: 4em;
   width: 80%;
-  padding: 8vw;
-  border: solid 1px blue;
-  background-color: aquamarine; }
+  padding: 10vw 10vw;
+  background-image: url(/img/background.jpg);
+  background-size: cover;
+  background-position: center center;
+  color: beige;
+  text-align: center; }
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0; }
 
 .container {
   width: 80%;
