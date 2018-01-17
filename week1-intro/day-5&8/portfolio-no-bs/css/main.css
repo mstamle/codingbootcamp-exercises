@@ -229,6 +229,19 @@ footer {
     margin: 4em;
 }
 
+section p,
+section p a {
+    display: flex;
+}
+
+form{
+    display: flex;
+}
+form div {
+    display: flex;
+
+}
+
 footer {
     color: #4d341e;
 }
