@@ -2,7 +2,7 @@
   box-sizing: border-box; }
 
 body {
-  color: beige;
+  color: #F1BA5F;
   background-color: #070504; }
 
 header {
@@ -15,11 +15,14 @@ nav {
   justify-content: flex-end;
   background-color: black; }
 
+#logo {
+  height: 80px; }
+
 nav ul {
   display: flex;
-  background-color: black;
-  color: white;
+  background-color: #070504;
   margin: 0;
+  margin-right: 20px;
   text-align: center; }
 
 nav li {
@@ -28,12 +31,12 @@ nav li {
 nav a {
   text-decoration: none;
   display: block;
-  color: white;
+  color: #F1BA5F;
   padding: 1.4em 0.4em; }
 
 nav a:hover
 a:focus {
-  background-color: yellow; }
+  background-color: #2F0B07; }
 
 .sticky {
   position: fixed;
@@ -50,16 +53,23 @@ a:focus {
   margin-top: 5em;
   margin-bottom: 4em;
   width: 80%;
-  padding: 10vw 10vw;
+  padding-top: 10vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-bottom: 20vw;
   background-image: url(/img/background.jpg);
   background-size: cover;
   background-position: center center;
-  color: beige;
+  color: #F1BA5F;
   text-align: center; }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.7rem;
   margin-bottom: 0; }
+
+h2,
+h3 {
+  text-align: center; }
 
 .container {
   width: 80%;
@@ -69,4 +79,4 @@ h1 {
 .line {
   border: 0;
   height: 1px;
-  background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.75), transparent); }
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0)); }

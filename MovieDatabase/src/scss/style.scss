@@ -9,7 +9,7 @@ $darkerbrown: #2F0B07;
 }
 
 body {
-    color:beige;
+    color: $sandybrown;
     background-color: #070504;
 }
 
@@ -26,13 +26,17 @@ nav {
 
 }
 
+#logo {
+    height: 80px;
+}
+
 nav {
 
     ul {
         display: flex;
-        background-color: black;
-        color: white;
+        background-color: $black;
         margin: 0;
+        margin-right: 20px;
         text-align: center;
     }
 
@@ -44,7 +48,7 @@ nav {
     a {
         text-decoration: none;
         display: block;
-        color: white;
+        color: $sandybrown;
         padding: 1.4em 0.4em;
 
 
@@ -52,7 +56,7 @@ nav {
 
     a:hover
     a:focus{
-        background-color: yellow;
+        background-color:$darkerbrown;
     }
 
 }
@@ -76,17 +80,25 @@ nav {
     margin-top: 5em;
     margin-bottom: 4em;
     width: 80%;
-    padding: 10vw 10vw;
+    padding-top: 10vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-bottom: 20vw;
     background-image: url(/img/background.jpg);
     background-size: cover;
     background-position: center center;
-    color: beige;
+    color: $sandybrown;
     text-align: center;
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 1.7rem;
     margin-bottom: 0;
+}
+
+h2,
+h3 {
+    text-align: center;
 }
 
 .container {
@@ -100,7 +112,7 @@ h1 {
 .line {
     border: 0;
     height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0),
-                                                rgba(0, 0, 0, 0.75),
-                                                rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0),
+                                                rgba(255,255,255, 0.75),
+                                                rgba(255, 255, 255, 0));
 }
