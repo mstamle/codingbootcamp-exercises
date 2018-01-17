@@ -40,7 +40,7 @@ nav {
         text-align: center;
     }
 
-    li{
+    li {
         list-style: none;
 
     }
@@ -55,7 +55,7 @@ nav {
     }
 
     a:hover,
-    a:focus{
+    a:focus {
         background-color:$darkerbrown;
     }
 
@@ -103,7 +103,7 @@ h3 {
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     margin: auto;
 
 }
@@ -135,11 +135,11 @@ article {
 .sideimg {
     flex: 1 1 300px;
     margin-right: 2rem;
-    text-align: justify;
+    text-align: center;
 }
 
-.sideimg img{
-    max-width: 50%;
+.sideimg img {
+    max-width: 80%;
     border-radius: 75%;
 }
 
@@ -147,4 +147,10 @@ article {
     flex: 1 0 300px; /* image width */
     max-width: 100%;
     padding: 0 2rem;
+}
+
+.centerimg {
+    width: 70%;
+    margin: auto;
+
 }

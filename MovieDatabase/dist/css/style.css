@@ -73,7 +73,7 @@ h3 {
   font-weight: bold; }
 
 .container {
-  width: 80%;
+  width: 90%;
   margin: auto; }
 
 .section {
@@ -95,10 +95,10 @@ article {
 .sideimg {
   flex: 1 1 300px;
   margin-right: 2rem;
-  text-align: justify; }
+  text-align: center; }
 
 .sideimg img {
-  max-width: 50%;
+  max-width: 80%;
   border-radius: 75%; }
 
 .article {
@@ -106,3 +106,7 @@ article {
   /* image width */
   max-width: 100%;
   padding: 0 2rem; }
+
+.centerimg {
+  width: 70%;
+  margin: auto; }
