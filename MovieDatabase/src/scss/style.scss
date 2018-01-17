@@ -96,7 +96,8 @@ h1 {
     margin-bottom: 0;
 }
 
-h2 {
+h2,
+h3 {
     text-align: center;
     font-weight: bold;
 }
@@ -123,4 +124,27 @@ h2 {
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0),
                                                 rgba(255,255,255, 0.75),
                                                 rgba(255, 255, 255, 0));
+    margin: 4em;
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sideimg {
+    flex: 1 1 300px;
+    margin-right: 2rem;
+    text-align: justify;
+}
+
+.sideimg img{
+    max-width: 50%;
+    border-radius: 75%;
+}
+
+.article {
+    flex: 1 0 300px; /* image width */
+    max-width: 100%;
+    padding: 0 2rem;
 }
