@@ -112,10 +112,12 @@ h3 {
     background-color: $black;
     color: $sandybrown;
     padding: 4em;
-
-
 }
 
+.section--hotm,
+.section--hota {
+    text-align: center;
+}
 /* Gradient transparent - color - transparent */
 
 .line {

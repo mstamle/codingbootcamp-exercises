@@ -81,6 +81,10 @@ h3 {
   color: #F1BA5F;
   padding: 4em; }
 
+.section--hotm,
+.section--hota {
+  text-align: center; }
+
 /* Gradient transparent - color - transparent */
 .line {
   border: 0;
