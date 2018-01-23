@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Some page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <style>
+    .bold {
+        font-weight: bold;
+        color: #225599;
+    }
+    .bord {
+        border: 1px solid salmon;
+        border-radius: 10px;
+    }
+    .num {
+        font-size: 7rem;
+        text-align: center;
+    }
+    </style>
+    <script>
+    function roll(lower,upper) {
+        var die = Math.round(lower+ Math.random() * (upper-lower));
+        var result = document.getElementById('result');
+        return die;
+        result.innerHTML = "You have rolled " + die;
+    }
+
+    function show(lower,upper) {
+        var die = Math.round(lower+ Math.random() * (upper-lower));
+        var myresult = document.getElementById('myresult');
+        myresult.innerHTML = "You have rolled " + die;
+        myresult.className += ' bord';
+    }
+    </script>
+
+    <div class="num">
+    <button onclick="show(1,6)">Roll the die!!</button>
+    <p class="bold" id="myresult">Result will be here.</p>
+    </div>
+
+</body>
+</html>

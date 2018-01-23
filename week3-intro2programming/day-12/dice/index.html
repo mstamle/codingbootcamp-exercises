@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Some page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <style>
+    .bold {
+        font-weight: bold;
+        color: blue;
+    }
+    .bord {
+        border: 1px solid salmon;
+        border-radius: 10px;
+    }
+    .num {
+        font-size: 10rem;
+        text-align: center;
+    }
+    </style>
+    <script>
+    console.log('Hello World');
+    alert('Hello World');
+
+    // function greet(){
+    //     alert('Hello World!')
+    // }
+
+    function greet(name) {
+        var welcome = document.getElementById('welcome');
+        welcome.innerHTML = "Hello world, " + name;
+        welcome.className += ' bord';
+    }
+
+    function roll(lower,upper) {
+        var die = Math.round(lower+ Math.random() * (upper-lower));
+        var result = document.getElementById('result');
+        return die;
+        result.innerHTML = "You have rolled " + die;
+    }
+
+
+    </script>
+    <button onclick="greet('Tam')">Hello!</button>
+    <p class="bold" id="welcome">Ready?</p>
+
+    <div class="num">
+    <button onclick="roll(1,6)">Roll the die!</button>
+    <p id="result">Result will be here</p>
+    </div>
+
+</body>
+</html>

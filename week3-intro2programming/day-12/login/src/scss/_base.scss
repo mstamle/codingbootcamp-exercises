@@ -1,0 +1,35 @@
+.jumbotron {
+    background-color: white;
+    background-image: url(../img/banner.jpg);
+    background-position: top center;
+    margin: auto;
+    width: 65%;
+    background-repeat: no-repeat;
+    margin-top: 12vw;
+    height: 70%
+
+}
+
+.card {
+    width: 320px;
+    margin-left: 170px;
+}
+
+h1 {
+    color: white;
+    font-family:  'Alegreya Sans', sans-serif;
+    font-style: italic;
+}
+
+h2 {
+    color: #808080;
+    font-size: 1.5rem;
+}
+
+body {
+    background-color: black;
+}
+
+.btn {
+    width: 100%;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Roll 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <style>
+    .bold {
+        font-weight: bold;
+        color: #225599;
+    }
+    .bord {
+        border: 1px solid salmon;
+        border-radius: 10px;
+    }
+    .num {
+        font-size: 7rem;
+        text-align: center;
+    }
+
+    p {
+        line-height: 21rem;
+        margin: 20px;
+    }
+
+    button {
+        height: 4rem;
+        width: 16rem;
+        color: #225599;
+        font-size: 2rem;
+        font-weight: bold;
+        border-radius: 20px;
+    }
+
+    .yield1 {
+        background-image: url(side1.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        color: rgba(0,0,0,0);
+        font-weight: bold;
+    }
+
+    .yield2 {
+        background-image: url(side2.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        color: rgba(0,0,0,0);
+        font-weight: bold;
+    }
+
+    .yield3 {
+        background-image: url(side3.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        color: rgba(0,0,0,0);
+        font-weight: bold;
+    }
+
+    .yield4 {
+        background-image: url(side4.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        color: rgba(0,0,0,0);
+        font-weight: bold;
+    }
+
+    .yield5 {
+        background-image: url(side5.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        color: rgba(0,0,0,0);
+        font-weight: bold;
+    }
+
+    .yield6 {
+        background-image: url(side6.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        color: rgba(0,0,0,0);
+        font-weight: bold;
+    }
+    </style>
+    <script>
+    // function roll(lower,upper) {
+    //     var die = Math.round(lower+ Math.random() * (upper-lower));
+    //     var result = document.getElementById('result');
+    //     return die;
+    //     result.innerHTML = "You have rolled " + die;
+    // }
+
+    function show(lower,upper) {
+        var die = Math.round(lower+ Math.random() * (upper-lower));
+        var myresult = document.getElementById('myresult');
+        myresult.innerHTML = ".";
+        myresult.className = ' yield' + die;
+    }
+    </script>
+
+    <div class="num">
+    <button onclick="show(1,6)">Roll the die!!</button>
+    <p class="bold" id="myresult">Result will be here.</p>
+    </div>
+
+</body>
+</html>

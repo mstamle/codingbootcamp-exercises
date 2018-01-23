@@ -1,0 +1,90 @@
+div div:nth-child(3) ul li:nth-child(2) span {
+    color: red;
+  }
+
+
+/* div {
+    border: 1px solid #000000;
+    padding: 1em;
+    margin: 1em;
+}
+
+.container{
+    display: flex;
+}
+
+.main,
+.left,
+.right{
+    display: flex;
+    justify-content: space-around;
+}
+
+.left {
+    order: 1;
+    flex-basis: 20%;
+}
+
+.main {
+    order: 2;
+    flex-direction: column;
+    flex-basis: 60%;
+}
+
+.right {
+    order: 3;
+    flex-basis: 20%;
+} */
+
+/* div {
+    border: 1px solid #000000;
+    padding: 1em;
+  }
+
+.outer {
+    display: flex;
+}
+
+.inner {
+    display: flex;
+    margin-top: -58px;
+    margin-right: -34px;
+    height: 20px;
+
+}
+
+.middle {
+    display: flex;
+    width: 100%;
+    margin-top: 1.5em;
+    margin-left: -40px;
+    justify-content: space-between;
+
+} */
+
+@media only screen and (min-width: 320px) {
+    h1 {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    h1 {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+        h1 {
+        font-size: 20px;
+    }
+
+}
+@media only screen and (min-width: 1280px) {
+    h1 {
+        font-size: 32px;
+    }
+}
+
+
+
