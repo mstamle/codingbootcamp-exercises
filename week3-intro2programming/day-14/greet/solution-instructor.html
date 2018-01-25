@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Greet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1 id="greeting">Hello</h1>
+    <input type="text" id="name">
+    <button type="button" id="btn">Greet</button>
+</body>
+
+    <script>
+    /*
+        1. btn click listener
+        2. get value of name from input
+        3. render the greeting
+    */
+
+        document.getElementById('btn').addEventListener('click',btnClicked);
+        // Using name of function without brackets is reference for function.
+
+        function btnClicked(){
+            var name = document.getElementById('name').value;
+            greet(name);
+        }
+
+        function greet(name){
+            document.getElementById('greeting').innerHTML = 'Hello ' + name;
+        }
+    </script>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Salary Calc</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <script>
+     function show_salary(){
+         var input_rate = document.getElementById('rate');
+         var rate = parseInt(input_rate.value);
+         var input_hours = document.getElementById('hours');
+         var hours = parseInt(input_hours.value);
+         var input_days = document.getElementById('days');
+         var days = parseInt(input_days.value);
+         var input_tax = document.getElementById('tax');
+         var tax = parseFloat(input_tax.value);
+         var salary = salary(rate,hours,days);
+         document.getElementById('salary').innerHTML =
+         'Your salary is ' + salary + '.';
+         var salary = salary * (1 - tax);
+         document.getElementById('taxed-salary').innerHTML =
+         'And your taxed salary is '+ salary +'.';
+     }
+    </script>
+    <div>
+        How much you earn per hour: <input id="rate" type="number"> <br/>
+        Number of hours you work per day: <input id="hours" type="number"> <br/>
+        Number of days you work per month: <input id="days" type="number"> <br/>
+        Income tax rate in your country: <input id="tax" type="number"><br/>
+
+    </div>
+    <button onclick="salary()">Calculate</button>
+    <p id="salary"></p>
+    <p id="taxed-salary"></p>
+
+    <script src="salary.js"></script>
+</body>
+</html>
