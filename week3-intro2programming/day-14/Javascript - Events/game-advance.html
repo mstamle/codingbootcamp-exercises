@@ -1,0 +1,91 @@
+<html>
+<body>
+<div id="square"></div>
+
+
+<script>
+    var square = document.getElementById('square');
+
+    var hue = 'rgb(' + (Math.floor(Math.random() * 256)) + ','
+                         + (Math.floor(Math.random() * 256)) + ','
+                         + (Math.floor(Math.random() * 256)) + ')';
+
+    square.style.width = "100px";
+    square.style.height = "100px";
+    square.style.background = hue;
+    square.style.position = "absolute";
+    square.style.left = (window.innerWidth - 100) / 2 + "px";
+    square.style.top = (window.innerHeight - 100) / 2 + "px";
+
+
+
+    console.log(square.style.left);
+
+    /*
+        1. listen for keyup event in browser
+
+    */
+
+    document.addEventListener('keyup',keyPressed);
+
+    /*
+        2. Determine which kep was pressed
+    */
+
+    function keyPressed(event) {
+        console.log(event);
+        clearInterval(backgroundInterval);
+
+    //     if(event.key == "ArrowRight"){
+
+    //         var left = square.style.left;
+    //         left = parseInt(left) + 10;
+    //         square.style.left = left + 'px';
+
+
+    //     }else if (event.key == "ArrowLeft"){
+
+    //         square.style.left = (parseInt(square.style.left)-10) +'px';
+
+    //     }
+    //     else if (event.key == "ArrowUp"){
+
+    //         var top = square.style.top;
+    //         top = parseInt(top) -10;
+    //         square.style.top = top + 'px';
+
+    //     }
+    //     else if (event.key == "ArrowDownt"){
+    //         var top = square.style.top;
+    //         top = parseInt(top) +10;
+    //         square.style.top = top + 'px';
+
+    //     }
+    //     else if (event.key == "Enter"){
+    //         var hue = 'rgb(' + (Math.floor(Math.random() * 256)) + ','
+    //                      + (Math.floor(Math.random() * 256)) + ','
+    //                      + (Math.floor(Math.random() * 256)) + ')';
+    //         square.style.background = hue;
+    //     }
+    // }
+
+    var backgroundInterval = setInterval (changeBackground,1000);
+
+    function changeBackground () {
+        var hue = 'rgb(' + (Math.floor(Math.random() * 256)) + ','
+                         + (Math.floor(Math.random() * 256)) + ','
+                         + (Math.floor(Math.random() * 256)) + ')';
+            square.style.background = hue;
+    }
+
+    var moveRightInterval;
+    var moveLeftInterval;
+
+    document.addEventListener('keydown',keyDown);
+
+    function keyDown(event){
+        if(event.key ==)
+    }
+
+</script>
+</body>
