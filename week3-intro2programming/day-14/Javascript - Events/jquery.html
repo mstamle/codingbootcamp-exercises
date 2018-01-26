@@ -3,85 +3,30 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="http://todomvc.com/examples/vanilla-es6/node_modules/todomvc-common/base.css">
-        <link rel="stylesheet" href="http://todomvc.com/examples/vanilla-es6/node_modules/todomvc-app-css/index.css">
-        <title>Lecture 01</title>
+
+        <title>jQuery</title>
     </head>
     <body>
-        <section class="todoapp">
-            <header class="header">
-                <h1>todos</h1>
-                <input class="new-todo" placeholder="What needs to be done?" autofocus>
-            </header>
-            <section class="main">
-                <input class="toggle-all" type="checkbox">
-                <label for="toggle-all">Mark all as complete</label>
-                <ul class="todo-list">
-
-                </ul>
-            </section>
-        </section>
-
-
-
-        <script src="http://code.jquery.com/jquery-2.2.4.min.js"
-                integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-                crossorigin="anonymous"></script>
-
+       <input type="text">
+       <p>Hello <strong>jquery</strong></p>
+       <a class="btn btn-primary" href="http://google.com">Link</a>
         <script>
-            /*
-             Template:
+        //both .btn .btn-primary = class="btn btn-primary"
+        // no space means AND
+        $('.btn.btn-primary')
 
-                place into .todo-list
+        // .btn or .btn-primary = class="btn" or class="btn-primary"
+        // comma means OR
+        $('.btn,.btn-primary')
 
-             <li class="completed">
-                <div class="view">
-                    <input class="toggle" type="checkbox" checked>
-                    <label>aaa</label>
-                    <button class="destroy"></button>
-                </div>
-             </li>
-             */
+        // .btn-primary nested in .btn:
+        // space means NESTING
+        // <a class="btn">
+        //     <a class="btn-primary"></a>
+        // </a>
+        $('.btn .btn-primary')
 
-            var todos = [
-                { text: 'Buy milk', completed: true  },
-                { text: 'Complete challenge for CBP', completed: false },
-                { text: 'Learn more about JS & jQuery', completed: false },
-            ];
-
-        var i = 0;
-
-        while (i<todos.length){
-            console.log(todos[i].text,todos[i].completed);
-
-
-
-        var completed = '';
-        if(todo[i].completed){
-            completed = 'completed';
-        }
-
-        $('ul.todo-list').append(
-            '<li class="'+ completed + '">'+
-                '<div class="view">'+
-                    '<input class="toggle" type="checkbox" + checked '>'+
-                    '<label>'+ todo[i].text + '</label>'+
-                    '<button class="destroy"></button>'+
-                '</div>'+
-            '</li>'
-        );
-
-        i++;
-
-        }
-
-
-        <footer class="info">
-            <p>Double-click to edit a todo</p>
-            <p>Created by <a href="http://twitter.com/oscargodson">Oscar Godson</a></p>
-            <p>Refactored by <a href="https://github.com/cburgmer">Christoph Burgmer</a></p>
-            <p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
-        </footer>
+        </script>
 
         <script src="jquery-3.3.1.min.js"></script>
     </body>

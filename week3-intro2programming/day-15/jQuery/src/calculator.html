@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    .calculator {
+        margin-top: 150px;
+        margin-left: 35%;
+    }
+    </style>
+</head>
+<body>
+   <div class="calculator">
+        <input id="numbera" type="number">
+        <select id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <input id="numberb" type="number">
+        <button onclick="calc()">Calculate</button>
+        <p id="result"></p>
+   </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

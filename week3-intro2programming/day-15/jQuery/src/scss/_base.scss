@@ -1,0 +1,33 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: light;
+}
+
+
+.counterimg {
+    width: 100%;
+    padding: 306px 0;
+    background-image: url('/img/counter.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+.nav {
+    padding: 4em 0;
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+footer a {
+    color: #419BF9;
+}
+
+.jumbotron {
+    background-color: white;
+
+}
+
+article h2 {
+    font-size: 1.5em;
+}

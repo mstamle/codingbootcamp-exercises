@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/index.css">
+
+        <title>jQuery</title>
+    </head>
+    <body>
+       <input type="text">
+       <p>Hello <strong>jquery</strong></p>
+       <a class="btn btn-primary" href="http://google.com">Link</a>
+       <a href="calculator.html">Calculator</a>
+        <script>
+        //both .btn .btn-primary = class="btn btn-primary"
+        // no space means AND
+        $('.btn.btn-primary')
+
+        // .btn or .btn-primary = class="btn" or class="btn-primary"
+        // comma means OR
+        $('.btn,.btn-primary')
+
+        // .btn-primary nested in .btn:
+        // space means NESTING
+        // <a class="btn">
+        //     <a class="btn-primary"></a>
+        // </a>
+        $('.btn .btn-primary')
+
+        document.getElementById('myBtn')
+        $('#myBtn')
+
+
+        //console.log($('body').length) -> this is very important for debugging
+
+        //1.looking for element
+        //2.getting the value
+        document.getElementById('number').value;
+        // can become:
+        $('#number').val();
+        // and to write the value, just add some value into the brackets:
+        $('#number').val(22);
+
+        //test:
+        $('#section1 a.btn.btn-danger')
+        //looking for all the children of the element with id section1, which
+        // have all be anchors, and which all have to have all the classes.
+
+        </script>
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+    </body>
+</html>
