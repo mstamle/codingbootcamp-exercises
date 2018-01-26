@@ -1,4 +1,9 @@
 
+// document.getElementById('btn').addEventListener('click',calc());
+$('#btn').click(calc);
+
+// Listener for keyUp: $(document).keyUp();
+
 function calc(){
     var a = parseFloat($('#numbera').val());
     var b = parseFloat($('#numberb').val());
@@ -20,3 +25,8 @@ function calc(){
 
 
 }
+
+// You can create the function inside the click too:
+// $('#btn').click(function(event){
+
+// })
