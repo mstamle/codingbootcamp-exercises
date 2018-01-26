@@ -39,3 +39,19 @@ $('.item-to-primary').click(function(){
     count = count +1;
     $('#basket-count').html(count);
 })
+
+var firstColumn = $('.first');
+var secondColumn = $('.second');
+
+$('#btn1').click(function(){
+    firstColumn.removeClass('col-md-6 col-md-9').addClass('col-md-3')
+    secondColumn.removeClass('col-md-6 col-md-3').addClass('col-md-9')
+})
+$('#btn3').click(function(){
+    firstColumn.removeClass('col-md-6 col-md-3').addClass('col-md-9')
+    secondColumn.removeClass('col-md-6 col-md-9').addClass('col-md-3')
+})
+$('#btn2').click(function(){
+    firstColumn.removeClass('col-md-9 col-md-3').addClass('col-md-6')
+    secondColumn.removeClass('col-md-9 col-md-3').addClass('col-md-6')
+})
