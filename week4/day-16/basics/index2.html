@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JS practice 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+    <button id="click-count">Click me!</button>
+    <script>
+        // new solution to clicking button so that the function is not called as
+        // inside the button's attribute
+
+       document.getElementById('click-count').addEventListener("click", clickCount);
+
+        var count = 0;
+        function clickCount() {
+            count += 1;
+            document.getElementById('click-count').innerHTML =
+            'This button has been clicked ' + count + ' times.';
+        }
+
+        // At this stage my var count is still used globally, and should the code
+        // be merged with someone's code, which happens to have a var count as well,
+        // the vars will overwrite each other.
+
+        // Now the challenge/upgrade is to make count as a property of an object and
+        // click will be its method. See index3.html
+
+    </script>
+
+</body>
+</html>

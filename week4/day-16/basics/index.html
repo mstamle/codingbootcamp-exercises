@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JS practice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+    <button id="click-count" onclick="clickCount()">Click me!</button>
+    <script>
+        console.log(123);
+        console.log(typeof 123);
+
+        console.log('123');
+        console.log(typeof '123');
+
+        var name = 'Tam';
+        console.log(name);
+
+        var age = 27;
+        console.log(age);
+
+//         Exercies
+//         Write a function logName that would log your name into the console
+//         and call it.
+
+        function logName1() {
+            console.log('TamLe');
+        }
+
+        logName1();
+
+
+        function logName(name) {
+            console.log(name);
+        }
+        logName('Tam');
+        logName('Tam');
+        logName('Tam');
+        logName('Tam');
+
+//         Exercies
+// Write a function log(value) that would log it's first
+//         parameter into the console.
+
+// Then call it twice supplying your name and age as arguments.
+
+        function logValue(value) {
+            console.log(value);
+        }
+
+        logValue(name);
+        logValue(age);
+        logValue('Hooray!')
+
+        function getType(value) {
+            return typeof value;
+        }
+
+
+        console.log (getType(name));
+        //console.log('string');
+        var type = getType(name);
+
+        var type_of_type = 'string'
+
+
+        var count = 0;
+        function clickCount() {
+            count += 1;
+            document.getElementById('click-count').innerHTML =
+            'This button has been clicked ' + count + ' times.';
+        }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>jQuery practice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <style>
+        body,
+        h1 {
+            margin: 0;
+        }
+
+        body{
+            height: 200em;
+        }
+
+        #mousepos {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            border: 1px solid black;
+            padding: 0.25em;
+        }
+
+        #toggle {
+            display: inline-block;
+            border-radius: 0.5em;
+            padding: 0.5em;
+            background-color: teal;
+            color: #ffffff;
+            cursor: pointer;
+        }
+
+        #toggle.clicked {
+            background-color: violet;
+            font-size: 2em;
+            border-radius: 50%;
+        }
+
+        #container>div {
+            display: none;
+        }
+
+        #container.show_odd .odd {
+            display: block;
+        }
+
+        #container.show_even .even {
+            display: block;
+        }
+
+        #topmenu {
+            height: 5em;
+            background-color: #666666;
+            color: #ffffff;
+        }
+
+        #topmenu.fixed {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="topmenu"></div>
+    <h1 id="headline">jQuery</h1>
+    <script>
+        var plain_h1 = document.getElementById('headline');
+        var jq_h1 = $('#headline');
+
+        console.log(plain_h1);//basic element object
+        console.log(jq_h1); //jQuery selection object - more capable, more methods
+
+        //jq_h1.html('The new headline');
+        plain_h1 = $(plain_h1); // turns the element into a jQuery seclection
+        plain_h1.html('The new headline');
+
+    </script>
+
+    <div class="output">Output element #1</div>
+    <div class="output">Output element #2</div>
+    <div class="output">Output element #3</div>
+
+
+    <div id="mousepos">
+        <div>X:
+            <span id="mousepos_x"></span>
+        </div>
+        <div>Y:
+            <span id="mousepos_y"></span>
+        </div>
+
+    </div>
+
+    <div id="toggle">CLICK ME</div>
+
+    <div id="container" class="show_even">
+        <div class="odd">
+            <p>
+                THIS IS ODD Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Aliquam porttitor, velit ac hendrerit interdum, quam felis
+                molestie augue, ac finibus quam urna vitae ante. Proin at erat
+                nec eros commodo tempor. Pellentesque viverra felis nulla, et
+                pellentesque ipsum scelerisque eu. Aenean dictum consectetur mi
+                vitae bibendum.
+            </p>
+        </div>
+
+        <div class="even">
+            <p>
+                THIS IS EVEN Maecenas lacinia metus id bibendum malesuada. In
+                hac habitasse platea dictumst. Praesent neque diam, imperdiet a
+                mi eget, commodo ullamcorper purus. Curabitur ornare, nisl eu
+                suscipit gravida, lectus ipsum viverra dui, eu tincidunt nibh
+                elit non felis. Praesent sit amet velit in libero mollis
+                vestibulum. Mauris a cursus lectus.
+
+            </p>
+        </div>
+
+    </div>
+
+    <script>
+        $('.output').html('Changed!');
+
+        // Write a code that would: Attach an event listener to the onmousemove
+        // event over the entire document body (document.body). Update the
+        // values in #mousepos_x and #mousepos_y Every time that event is
+        // registered.
+
+
+        //plain JS
+
+        // document.body.addEventListener('mousemove',function(event){
+        //     $('#mousepos_x').innerHTML = event.clientX;
+        //     $('#mousepos_y').innerHTML = event.clientY;
+        // });
+
+        //jQuery
+
+        $('body').on('mousemove', function (event) {
+            // console.log(event);
+            $('#mousepos_x').html(event.clientX);
+            $('#mousepos_y').html(event.clientY);
+        });
+
+        //For better inspection, apply on entire document instead of body. When
+        //using body I had to remove margin for body and h1, see <style> above.
+
+
+        //Write code that would:
+
+        // React to the click event on the #toggle element. Upon clicking add to
+        // it the class "clicked".
+
+        $('#toggle').on('click', function(event) {
+            console.log(this); //within a jQuery event-handling function
+            //'this' is the element that fired the event
+            $(this).toggleClass('clicked');
+        });
+
+        // code to show odd or even:
+        $('#container').on('click', function(event) {
+            $(this).toggleClass('show_even');
+            $(this).toggleClass('show_odd');
+        });
+
+        //watch the window for scrolling events when the distance from top of
+        //the document is greater than 80 it would add class "fixed" to the
+        //element #topmenu, otherwise remove that class.
+
+        console.log($(window).scrollTop());
+
+        $(window).scroll(function(event){
+            console.log($(window).scrollTop());
+            if ( $(window).scrollTop() > 80){
+                $('#topmenu').addClass('fixed');
+            } else{
+                $('#topmenu').removeClass('fixed');
+            };
+
+        });
+
+        // it's the same to write
+        //$(window).on('scroll',function(event){
+
+
+        //'event' is a variable that I create only within this function
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hero</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/hero.css" />
+
+</head>
+<body>
+    <div id="map">
+        <div id="hero"></div>
+    </div>
+
+    <div id="buttons">
+            <button onclick="placeHero(hero_x, hero_y - 50);">&uArr;</button>
+            <button onclick="placeHero(hero_x, hero_y + 50);">&dArr;</button>
+            <button onclick="placeHero(hero_x - 50, hero_y);">&lArr;</button>
+            <button onclick="placeHero(hero_x + 50, hero_y);">&rArr;</button>
+        </div>
+
+    <script src="js/hero.js"></script>
+</body>
+</html>
