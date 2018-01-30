@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="page-heading">
+		My Great Company
+	</div>
+	<div class="login-wrapper">
+		<div class="login">
+			<div class="login-heading">
+				Customer login
+			</div>
+			<div class="input-row">
+				<div class="icon user"></div>
+				<input class="field" id="user" type="text" />
+			</div>
+			<div class="input-row">
+				<div class="icon lock"></div>
+				<input class="field" id="password" type="password" />
+			</div>
+			<button class="login-button">Login</button>
+		</div>
+	</div>
+
+	<script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+  <script>
+
+	  $('.login-button').on('click',login);
+
+	  function login(event) {
+		 var user = $('#user').val();
+		 console.log(user);
+		 var password = $('#password').val();
+		 console.log(password);
+		 if (password !== 'opensesame') {
+			 $('#user').addClass('error');
+		 }else{
+			$('#user').removeClass('error');
+			 alert('Welcome home, Alibaba!');
+		 }
+	  }
+  </script>
+</body>
+</html>

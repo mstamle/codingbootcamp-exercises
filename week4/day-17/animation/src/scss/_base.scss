@@ -1,0 +1,24 @@
+body {
+    box-sizing: border-box;
+    height: 200rem;
+}
+#square {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background-color: darkgoldenrod;
+    margin: 20px;
+    border-radius: 50%;
+}
+.myProgress {
+    width: 100%;
+    padding: 20px;
+    background-color: beige;
+}
+
+.bar {
+    width: 0%;
+    height: 2rem;
+    background-color: darkolivegreen;
+    margin-bottom: 15px;
+}
