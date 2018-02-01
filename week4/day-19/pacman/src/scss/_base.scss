@@ -1,0 +1,47 @@
+body {
+    background-color: #232323;
+}
+
+
+
+#pacman {
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+}
+
+#candy {
+    left: 128px;
+    top: 64px;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    background-image: url(../img/candy-icon.png);
+    background-size: cover;
+}
+
+#ghost,
+#ghost2,
+#ghost3,
+#ghost4 {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+}
+
+
+.openMouth {
+    background-image: url(../img/pacman1.png);
+
+}
+
+.closeMouth {
+    background-image: url(../img/pacman2.png);
+
+}
+
+.hidden {
+    display: none;
+}
