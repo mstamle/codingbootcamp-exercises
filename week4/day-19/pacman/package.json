@@ -1,5 +1,5 @@
 {
-  "name": "MovieDatabase",
+  "name": "PacmanSimpleGame",
   "version": "1.0.0",
   "main": "index.js",
   "devDependencies": {
@@ -13,7 +13,7 @@
   },
   "author": "tl",
   "license": "MIT",
-  "description": "A page about movies.",
+  "description": "A small game with Pacman.",
   "dependencies": {
     "bootstrap": "^4.0.0-beta.3"
   }

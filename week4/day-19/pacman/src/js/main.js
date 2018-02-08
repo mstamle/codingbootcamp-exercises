@@ -48,6 +48,7 @@ function randomCandyPos(ev) {
     }
 }
 
+// Create an array of Ghost and randomize them.
 function randomGhost() {
         $('#ghost').css("left",(Math.floor(Math.random() * 15+1))*64);
         $('#ghost').css("top",(Math.floor(Math.random() * 7+1))*64);
