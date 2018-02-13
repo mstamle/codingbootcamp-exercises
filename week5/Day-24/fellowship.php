@@ -50,9 +50,13 @@ go_to_weathertop($party);
 function meet_arwen($party){
     global $party;
     $party['arwen'] = 'Arwen Undómiel';
+    array_splice($party,-10,9);
+
 }
 
 meet_arwen($party);
+
+// 19
 
 function go_to_rivendell(&$party){
     unset($party['arwen']);
