@@ -1,0 +1,10 @@
+SELECT NOW(),
+DATE_FORMAT(NOW(),'%W %M %Y'),
+DATE_ADD(NOW(), INTERVAL 30 DAY),
+DATE_SUB(NOW(), INTERVAL 6 MONTH),
+DATEDIFF(NOW(), '1980-12-26');
+
+SELECT
+SUBSTRING('https://classes.codingbootcamp.cz', 1, LOCATE('://','https://classes.codingbootcamp.cz') -1),
+SUBSTRING('https://classes.codingbootcamp.cz', LOCATE('://','https://classes.codingbootcamp.cz') + 3),
+RIGHT('https://classes.codingbootcamp.cz', LOCATE('.', REVERSE('https://classes.codingbootcamp.cz'))-1);

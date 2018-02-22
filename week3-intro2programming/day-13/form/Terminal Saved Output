@@ -1,0 +1,47 @@
+Last login: Fri Feb 16 09:41:39 on ttys001
+Les-MacBook-Pro:~ ltt$ cd web/codingbootcamp/hackathon3-cinemaBooking/cinema-booking/
+Les-MacBook-Pro:cinema-booking ltt$ git pull
+remote: Counting objects: 4, done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 4 (delta 1), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), done.
+From https://github.com/mbobbert/cinema-booking
+   9fd1775..1726c0f  master     -> origin/master
+Updating 9fd1775..1726c0f
+Fast-forward
+ sql_file/dump_guest_list_booking.sql | 52 ++++++++++++++++++++++++++++++++++++
+ 1 file changed, 52 insertions(+)
+ create mode 100644 sql_file/dump_guest_list_booking.sql
+Les-MacBook-Pro:cinema-booking ltt$ 
+Les-MacBook-Pro:cinema-booking ltt$ sudo nano /etc/private/hosts
+Password:
+Les-MacBook-Pro:cinema-booking ltt$ sudo nano /etc/private/host
+Les-MacBook-Pro:cinema-booking ltt$ sudo nano /private/etc/hosts
+
+
+
+
+  GNU nano 2.0.6           File: /private/etc/hosts                   Modified  
+
+255.255.255.255 broadcasthost
+::1             localhost
+
+127.0.0.1 home
+127.0.0.1 www.cbp-exercises.test
+127.0.0.1 www.tl-portfolio.test
+127.0.0.1 www.cbp-iexercises.test
+127.0.0.1 www.blog.my
+127.0.0.1 www.black.jack
+127.0.0.1 www.eshop.test
+127.0.0.1 www.cinebooking.hkt
+
+
+
+
+
+
+
+
+
+^G Get Help  ^O WriteOut  ^R Read File ^Y Prev Page ^K Cut Text  ^C Cur Pos
+^X Exit      ^J Justify   ^W Where Is  ^V Next Page ^U UnCut Text^T To Spell
