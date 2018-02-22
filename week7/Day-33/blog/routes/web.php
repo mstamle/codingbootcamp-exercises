@@ -29,5 +29,5 @@ Route::get('/hello','FirstController@index');
 
 Route::get('/home','HomeController@index');
 Route::get('/contact','ContactController@index');
-Route::get('/blog','BlogController@index');
+Route::get('/blog','Blog\BlogController@index');
 Route::get('/portfolio','PortfolioController@index');

@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 class HomeController extends Controller
 {
     public function index(){
-        return '<h1>This is my Home Page</h1>';
+        // return '<h1>This is my Home Page</h1>';
+
+
+       // return action( 'ContactController@index');
+
+        return view('home');
     }
 }
